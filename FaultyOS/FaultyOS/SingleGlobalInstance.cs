@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Security.Principal;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace FaultyOS
 {
   class SingleGlobalInstance : IDisposable
   {
-    //edit by user "jitbit" - renamed private fields to "_"
     public bool _hasHandle = false;
     Mutex _mutex;
 
